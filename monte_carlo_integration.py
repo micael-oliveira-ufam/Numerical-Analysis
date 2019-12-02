@@ -58,5 +58,4 @@ def definite_integral_show(f, x0, x1, N):
     print("Rectangle area:", f_max*(x1-x0))
     print("Area under the curve:", f_max*(x1-x0)*len(ind_below[0])/N)
 
-definite_integral_show(f1, 0, 3.14159265359
-, 200)
+definite_integral_show(f1, 0, 3.14159265359, 200)
