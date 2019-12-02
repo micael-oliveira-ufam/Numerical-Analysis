@@ -1,13 +1,21 @@
 # This algorithm it' not my own, the truth author can be found at:
 # http://www.cs.toronto.edu/~guerzhoy/180/lectures/W10/lec2/MonteCarloInt.html
 
+# Algoritmo para a disciplina de Cálculo Numérico 2019/2 lecionada pelo professor
+# José Reginaldo doscente do Instituto de Computação da Universidade Federal do 
+# Amazonas.
+
+# Aluno: Micael Davi Lima de Oliveira
+# Matrícula: 21851626
+# Turma: FB01
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 def f1(x):
     '''Return sqrt(1-x**2). If x is an array, perform the operation
     elementwise (whence the np.sqrt)'''
-    return np.sin(x)
+    return (np.sin(x))
 
 def definite_integral_show(f, x0, x1, N):
     """Approximate the definite integral of f(x)dx between x0 and x1 using
@@ -22,7 +30,7 @@ def definite_integral_show(f, x0, x1, N):
     #First, let's compute fmax. We do that by evaluating f(x) on a grid
     #of points between x0 and x1
     #This assumes that f is generally smooth. If it's not, we're in trouble!
-    x = np.arange(x0, x1, 0.00001)
+    x = np.arange(x0, x1, 0.000001)
     y = f(x)
     f_max = max(y)
     
@@ -44,16 +52,10 @@ def definite_integral_show(f, x0, x1, N):
     ind_below = np.where(y_rand < f(x_rand))
     ind_above = np.where(y_rand >= f(x_rand))
     
-    
     #Finally, let's display the results
     plt.plot(x, y, color = "red")
     plt.scatter(x_rand[ind_below], y_rand[ind_below], color = "green")
     plt.scatter(x_rand[ind_above], y_rand[ind_above], color = "blue")
-    plt.legend((pts_below, pts_above),
-           ('Pts below the curve', 'Pts above the curve'),
-           loc='lower left',
-           ncol=3,
-           fontsize=8)
     
     print("Number of pts above the curve:", len(ind_above[0]))
     print("Number of pts below the curve:", len(ind_below[0]))
@@ -61,4 +63,4 @@ def definite_integral_show(f, x0, x1, N):
     print("Rectangle area:", f_max*(x1-x0))
     print("Area under the curve:", f_max*(x1-x0)*len(ind_below[0])/N)
 
-definite_integral_show(f1, 0, 3.14159265359, 200)
+definite_integral_show(f1, 0, 3.1415926535897932384, 800)   
