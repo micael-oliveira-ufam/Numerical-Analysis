@@ -1,3 +1,6 @@
+# This algorithm it' not my own, the truth author can be found at:
+# http://www.cs.toronto.edu/~guerzhoy/180/lectures/W10/lec2/MonteCarloInt.html
+
 import numpy as np
 import matplotlib.pyplot as plt
 
