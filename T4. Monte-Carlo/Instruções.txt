@@ -1,0 +1,7 @@
+O algoritmo pode ser compilado utilizando o 
+seriço do Google Colaboratory Research.
+
+O programa está disponível publicamente, e pode
+ser acessado mediante o seguinte link:
+
+https://colab.research.google.com/drive/1XWlT0iD2pw-21Pdi53Tbz8QOL4tgl_FX
