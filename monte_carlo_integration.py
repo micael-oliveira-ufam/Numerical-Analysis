@@ -2,7 +2,7 @@
 # http://www.cs.toronto.edu/~guerzhoy/180/lectures/W10/lec2/MonteCarloInt.html
 
 # Algoritmo para a disciplina de Cálculo Numérico 2019/2 lecionada pelo professor
-# José Reginaldo doscente do Instituto de Computação da Universidade Federal do 
+# José Francisco doscente do Instituto de Computação da Universidade Federal do 
 # Amazonas.
 
 # Aluno: Micael Davi Lima de Oliveira
